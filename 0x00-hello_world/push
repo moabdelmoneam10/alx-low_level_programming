@@ -1,5 +1,0 @@
-#!/bin/bash
-read -p "Enter filename : " file
-git add .
-git commit -m "Add File : $file"
-git push
