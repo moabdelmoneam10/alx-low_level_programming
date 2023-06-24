@@ -2,8 +2,7 @@
 /**
  * _abs - return the abslute value
  * @n: is the number we calculate
- * Return the abslute n
- * Return 0 if n == 0
+ * Return: the abslute n or 0
 */
 int _abs(int n)
 {
