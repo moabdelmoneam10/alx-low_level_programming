@@ -1,10 +1,5 @@
 #include "main.h"
 /**
- * print_line - print the numbers
- *
- * Return: Always 0 (Success)
- */
-/**
  * _abs - return the abslute value
  * @n: is the number we calculate
  * Return: the abslute n or 0
@@ -25,6 +20,12 @@ int _abs(int n)
 	}
 }
 
+/**
+ * print_line - print the numbers
+ *
+ * @n: is the number we calculate
+ * Return: Always 0 (Success)
+ */
 void print_line(int n)
 {
 int c;
