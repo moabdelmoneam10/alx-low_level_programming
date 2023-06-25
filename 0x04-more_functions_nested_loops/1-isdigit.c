@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _isdigit - check the number
  * @c: is the character we check
@@ -7,6 +8,7 @@
 */
 int _isdigit(int c)
 {
+c -= 48;
 	if (c >= 0 && c <= 9)
 		return (1);
 	else
