@@ -2,7 +2,7 @@
 /**
  * print_diagonal - print every min in the day
  *
- * @n: the number of \
+ * @n: the number of back slach 
  */
 void print_diagonal(int n)
 {
