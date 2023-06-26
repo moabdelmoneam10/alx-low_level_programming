@@ -7,11 +7,12 @@
  */
 void rev_string(char *s)
 {
-	int i, counter = 0;
+	int i, j = 0, counter = 0;
+	char reverce[] = *s;
 
 	for (i = 0; s[i] != '\0'; i++)
 		counter++;
 	for (i = counter - 1; i >= 0; i--)
-		_putchar(s[i]);
+		s[i] = reverce[0 + j++];
 	_putchar('\n');
 }
