@@ -7,14 +7,24 @@
  */
 void rev_string(char *s)
 {
-	int i, j = 0, counter = 0;
-	char *reverce = NULL;
-
-	for (i = 0; s[i] != '\0'; i++)
-	{	counter++;
-		reverce[i] = s[i];
+	if (s == NULL)
+	return;
+	int length = 0;
+	char *start = s;
+	char *end = s;
+	
+	while (*end != '\0')
+	{
+		length++;
+		end++;
 	}
-	for (i = counter - 1; i >= 0; i--)
-		s[i] = reverce[j++];
-	_putchar('\n');
+	end--;
+	while (start < end)
+	{
+		char temp = *start;
+		*start = *end;
+		*end = temp;
+		start++;
+		end--;
+	}
 }
