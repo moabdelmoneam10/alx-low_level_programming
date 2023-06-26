@@ -8,7 +8,7 @@
 void rev_string(char *s)
 {
 	int i, j = 0, counter = 0;
-	char reverce[] = *s;
+	char *reverce = *s;
 
 	for (i = 0; s[i] != '\0'; i++)
 		counter++;
