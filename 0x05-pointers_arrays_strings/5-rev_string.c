@@ -8,11 +8,13 @@
 void rev_string(char *s)
 {
 	int i, j = 0, counter = 0;
-	char *reverce = *s;
+	char *reverce;
 
 	for (i = 0; s[i] != '\0'; i++)
-		counter++;
+	{	counter++;
+		reverce[i] = s[i];
+	}
 	for (i = counter - 1; i >= 0; i--)
-		s[i] = reverce[0 + j++];
+		s[i] = reverce[j++];
 	_putchar('\n');
 }
