@@ -1,12 +1,11 @@
 #include "main.h"
 /**
- * _strlen - tests function that prints if integer is positive or negative
+ * print_rev - tests function that prints if integer is positive or negative
  *
  * @s: the string we measure
  *
- * Return: the number of character
  */
-int _strlen(char *s)
+void print_rev(char *s)
 {
 	int i, counter = 0;
 
