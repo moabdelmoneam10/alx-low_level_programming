@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * print_rev - tests function that prints if integer is positive or negative
+ *  rev_string- tests function that prints if integer is positive or negative
  *
  * @s: the string we measure
  *
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int i, counter = 0;
 
