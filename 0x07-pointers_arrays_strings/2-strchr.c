@@ -9,22 +9,13 @@
  */
 char *_strchr(char *s, char c)
 {
-	unsigned int i = 1, flag = 0;
-
-	while (s[i] != '\0')
+	while (*s != '\0')
 	{
-		if (s[i] != c)
-		{
-			i++;
-		}
-		else
-		{
-			flag = i;
-			i = 0;
-		}
+		if (*s == c)
+			return (s);
+		s++;
 	}
-	if (i != 0)
-		return (NULL);
-	else
-		return (s + flag);
+	if (c == '\0')
+		return (s);
+	return (NULL);
 }
