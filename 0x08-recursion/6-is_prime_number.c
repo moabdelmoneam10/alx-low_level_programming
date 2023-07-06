@@ -23,7 +23,7 @@ int isDivisible(int n, int div)
  */
 int is_prime_number(int n)
 {
-	if (n < 1)
+	if (n <= 1)
 	{
 		return (0);
 	}
