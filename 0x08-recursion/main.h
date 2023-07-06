@@ -2,6 +2,11 @@
 #define MAIN_H
 
 #include <stdio.h>
+
+int _sqrt_recursion(int n);
+
+int _sqrt_helper(int n, int start, int end);
+
 int _putchar(char);
 
 int _pow_recursion(int x, int y);
