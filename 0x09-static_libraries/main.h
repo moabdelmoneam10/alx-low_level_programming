@@ -1,8 +1,3 @@
-#ifndef MAIN_H
-#define MAIN_H
-
-#include <stdio.h>
-int is_prime_number(int n);
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
@@ -23,23 +18,3 @@ char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
-
-int isDivisible(int num, int divisor);
-
-int _sqrt_recursion(int n);
-
-int _sqrt_helper(int n, int start, int end);
-
-int _putchar(char);
-
-int _pow_recursion(int x, int y);
-
-void _print_rev_recursion(char *s);
-
-int _strlen_recursion(char *s);
-
-void _puts_recursion(char *s);
-
-int factorial(int n);
-
-#endif /* MAIN_H */
