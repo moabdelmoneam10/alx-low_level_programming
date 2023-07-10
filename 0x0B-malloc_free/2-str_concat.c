@@ -15,9 +15,10 @@ int sizes(char *p)
 
 }
 /**
- *  _strdup - duplicate strings
+ *  str_concat - concate two strings
  *
- * @str: the string we duplicate
+ * @s1: the first string
+ * @s2: the sec string
  * Return: pointer to the new string
  */
 char *str_concat(char *s1, char *s2)
@@ -37,7 +38,7 @@ char *str_concat(char *s1, char *s2)
 		i++;
 	}
 	j = 0;
-	while ( s2 != NULL && s2[j] != '\0' )
+	while (s2 != NULL && s2[j] != '\0')
 	{
 		ar[i] = s2[j];
 		i++;
