@@ -7,9 +7,11 @@
   */
 int sizes(char *p)
 {
-if (*p == '\0')
-	return (0);
-return (1 + sizes(p + 1));
+	if (p == NULL)
+		return (0);
+	if (*p == '\0')
+		return (0);
+	return (1 + sizes(p + 1));
 
 }
 /**
@@ -24,6 +26,8 @@ char *_strdup(char *str)
 	char *ar;
 
 	size = sizes(str);
+	if (size == 0)
+		return (NULL);
 	ar = malloc(sizeof(char) * ++size);
 	if (ar == NULL)
 		return (NULL);
