@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  * size - return the size of string
+  * sizes - return the size of string
   *
   * @p: pointer to first index of string
   * Return: size
@@ -24,7 +24,7 @@ char *_strdup(char *str)
 	char *ar;
 
 	size = sizes(str);
-	ar = malloc(sizeof(char) * size);
+	ar = malloc(sizeof(char) * ++size);
 	if (ar == NULL)
 		return (NULL);
 	i = 0;
