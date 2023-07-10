@@ -8,15 +8,17 @@
  */
 char *argstostr(int ac, char **av)
 {
+	int arg_length, total_length, i, j, index;
+	char *result;
+
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	int arg_length, total_length, i, j, index;
-
 	total_length = 0;
 	for (i = 0; i < ac; i++)
 	{
 		total_length += strlen(av[i]) + 1;
 	}
+	result = (char *)malloc(sizeof(char) * total_length + 1);
 	if (result == NULL)
 		return (NULL);
 	index = 0;
