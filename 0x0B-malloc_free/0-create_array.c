@@ -3,8 +3,9 @@
 /**
  *  create_array - create array
  *
- * @s: the char we fell with
+ * @c: the char we fell with
  * @size: the size of array
+ * Return: pointer to the array
  */
 char *create_array(unsigned int size, char c)
 {
@@ -22,7 +23,7 @@ char *create_array(unsigned int size, char c)
 		ar[i] = c;
 		i++;
 	}
-	
+
 	return (ar);
 }
 
