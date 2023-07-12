@@ -10,13 +10,14 @@ int main(int argc, char *argv[] __attribute__((unused)))
 {
 	int num, i, cnt;
 	int ar[5] = {25, 10, 5, 2, 1};
+
 	if (argc != 2)
-	{	
+	{
 		printf("%s\n", "Error");
 		return (1);
 	}
 	num = atoi(argv[1]);
-	if(num < 0)
+	if (num < 0)
 	{
 		printf("%d\n", 0);
 		return (0);
