@@ -4,6 +4,7 @@
  * malloc_checked - create array
  *
  * @b: the char we fell with
+ * Return: pointer to storage
  */
 void *malloc_checked(unsigned int b)
 {
@@ -15,6 +16,6 @@ void *malloc_checked(unsigned int b)
 		exit(98);
 	}
 	else
-		return (ar);		
+		return (ar);
 }
 
