@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- *  create_array - create array
+ * array_range - create array
  *
- * @c: the char we fell with
- * @size: the size of array
+ * @min: the char we fell with
+ * @max: the size of array
  * Return: pointer to the array
  */
 int *array_range(int min, int max)
@@ -14,7 +14,7 @@ int *array_range(int min, int max)
 
 	if (min > max)
 		return (NULL);
-	ar = malloc(sizeof ar * (max - min));
+	ar = malloc(sizeof(ar) * (max - min));
 	if (ar == NULL)
 		return (NULL);
 	i = 0;
