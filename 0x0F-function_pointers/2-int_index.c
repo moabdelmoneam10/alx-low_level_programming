@@ -1,11 +1,12 @@
 #include <stdlib.h>
 #include "function_pointers.h"
 /**
- * print_name - create array
- * @f: function pointer to a function that takes a char* argument
+ * int_index- finding the index of element in array
+ * @array: the array we search in
+ * @size: the size of array
  *
- * @name: the word we work with
- * Return: No thing
+ * @cmp: action we work
+ * Return: the index
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
@@ -20,7 +21,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 			f = (*cmp)(array[i]);
 			if (f == 1)
 				return (i);
-	
+
 		}
 	}
 	return (-1);
