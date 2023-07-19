@@ -1,28 +1,14 @@
 #include "main.h"
 /**
- *  rev_string- tests function that prints if integer is positive or negative
+ *  _puts - print the string
  *
- * @s: the string we measure
- *
+ * @str: the string we print
  */
-void rev_string(char *s)
+void _puts(char *str)
 {
-	char *start = s;
-	char *end = s;
-	int length = 0;
+	int i;
 
-	while (*end != '\0')
-	{
-		length++;
-		end++;
-	}
-	end--;
-	while (start < end)
-	{
-		char temp = *start;
-		*start = *end;
-		*end = temp;
-		start++;
-		end--;
-	}
+	for (i = 0; str[i] != '\0'; i++)
+		_putchar(str[i]);
+	_putchar('\n');
 }

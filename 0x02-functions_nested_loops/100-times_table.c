@@ -3,9 +3,14 @@
  * times_table - prints the 9 times table, starting with 0.
  * @n: num we work with
  */
+void ones(int m, int next)
+{
+
+
+}
 void print_times_table(int n)
 {
-	int i, j;
+	int i, j, next;
 
 	if (n >= 0 && n <= 15)
 	{

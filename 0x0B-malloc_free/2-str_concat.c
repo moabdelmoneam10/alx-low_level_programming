@@ -1,10 +1,10 @@
 #include "main.h"
 /**
-  * sizes - return the size of string
-  *
-  * @p: pointer to first index of string
-  * Return: size
-  */
+ * sizes - return the size of string
+ *
+ * @p: pointer to first index of string
+ * Return: size
+ */
 int sizes(char *p)
 {
 	if (p == NULL)
