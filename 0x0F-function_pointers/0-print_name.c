@@ -3,7 +3,6 @@
 /**
  * print_name - create array
  * @f: function pointer to a function that takes a char* argument
- *
  * @name: the word we work with
  * Return: No thing
  */
