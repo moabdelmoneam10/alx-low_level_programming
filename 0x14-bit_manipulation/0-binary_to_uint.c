@@ -13,10 +13,8 @@ unsigned int binary_to_uint(const char *b)
 	num = 0;
 	if (b == NULL)
 		return (0);
-	for (i = 0; *b != '\0'; i++)
-	{
 		if (*b == '0' || *b == '1')
-			num = num *2 + (*b++ - '0');
+			num = num * 2 + (*b++ - '0');
 		else
 			return (0);
 	}
