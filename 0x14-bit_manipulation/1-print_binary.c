@@ -15,7 +15,7 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 		return;
 	}
-	if (n == 1)
+	else if (n == 1)
 	{
 		_putchar('1');
 		return;
@@ -25,10 +25,10 @@ void print_binary(unsigned long int n)
 		_putchar('1');
 		while (n != 0)
 		{
-			n /= 2;
+			n = n / 2;
 			if (n == 1)
 			{
-				if (num % 2 != 0)
+				if ((num % 2) != 0)
 				{
 					_putchar('1');
 					break;
@@ -36,7 +36,7 @@ void print_binary(unsigned long int n)
 			}
 			else if (n % 2 != 0)
 				 _putchar('1');
- 			else
+			else
 				_putchar('0');
 		}
 	}
