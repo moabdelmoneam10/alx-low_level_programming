@@ -1,15 +1,16 @@
 #include "main.h"
+
 /**
- * swap_int - swap two numbers
- *
- * @a: the first number
- * @b: the sec number
- */
+  * swap_int - swap to int
+  * @a: the first int
+  * @b: the secund int
+  */
+
 void swap_int(int *a, int *b)
 {
-	int n;
+	int temp;
 
-	n = *a;
+	temp = *a;
 	*a = *b;
-	*b = n;
+	*b = temp;
 }
