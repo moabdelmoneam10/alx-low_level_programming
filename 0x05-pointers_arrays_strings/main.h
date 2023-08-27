@@ -1,24 +1,7 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
 #include <stdio.h>
-
-void puts_half(char *str);
-
-void puts2(char *str);
-	
-void rev_string(char *s);
-
-void print_rev(char *s);
-
-int _putchar(char c);
-
-int _strlen(char *s);
-
-void _puts(char *str);
-
-void swap_int(int *a, int *b);
-
 void reset_to_98(int *n);
 
-#endif /* MAIN_H */
+#endif /*_MAIN_H_*/
