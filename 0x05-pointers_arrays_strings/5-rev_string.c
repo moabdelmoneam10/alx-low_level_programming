@@ -1,38 +1,21 @@
 #include "main.h"
+#include <string.h>
 
 /**
-  * _strlen - get the length of the string
-  * @s1: the string
-  * Return: the length of string
-  */
-
-int _strlen(char *s1)
-{
-	int cnt;
-
-	for (cnt = 0; *s1++ != '\0'; cnt++)
-	{}
-	return (cnt);
-}
-
-/**
-  * rev_string - print the string in rev
-  * @s: the string
-  */
+ * rev_string - Entry point.
+ * @s: pointer
+ *
+*/
 
 void rev_string(char *s)
 {
-	int len, i;
-	char s2[100];
+	int len = strlen(s);
+	int i;
 
-	i = 0;
-	len = _strlen(s);
-	while (s[i] != '\0')
+	for (i = 0; i < len / 2; i++)
 	{
-		s2[i] = s[i];
-		i++;
+		char temp = s[i];
+		s[i] = s[len - 1 - i];
+		s[len - 1 - i] = temp;
 	}
-	i = 0;
-	while (len--)
-		s[i++] = s2[len];
 }
