@@ -1,17 +1,31 @@
 #include "main.h"
+
 /**
- * print_rev - tests function that prints if integer is positive or negative
- *
- * @s: the string we measure
- *
- */
+  * _strlen - get the length of the string
+  * @s1: the string
+  * Return: the length of string
+  */
+
+int _strlen(char *s1)
+{
+	int cnt;
+
+	for (cnt = 0; *s1++ != '\0'; cnt++)
+	{}
+	return (cnt);
+}
+
+/**
+  * print_rev - print the string in rev
+  * @s: the string
+  */
+
 void print_rev(char *s)
 {
-	int i, counter = 0;
+	int len;
 
-	for (i = 0; s[i] != '\0'; i++)
-		counter++;
-	for (i = counter - 1; i >= 0; i--)
-		_putchar(s[i]);
+	len = _strlen(s);
+	while (len--)
+		_putchar(s[len]);
 	_putchar('\n');
 }
